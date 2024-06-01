@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Imagen de la galleta de la fortuna (responsivo) */
+.fortune-cookie-image {
+  width: 50vw; /* Ancho relativo al viewport */
+  height: 50vw; /* Alto relativo al viewport */
+  max-width: 250px; /* Máximo ancho para pantallas grandes */
+  max-height: 250px; /* Máximo alto para pantallas grandes */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la fortuna (responsivo) */
+.fortune-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fortune-container p {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fortune-container button {
+  padding: 5px;
+}
+
+/* Texto de la fortuna */
+.fortune-text {
+  font-size: 1em; /* Tamaño de fuente relativo (em) */
+  line-height: 1.5;
+}
+
+/* Título en mayúscula (responsivo) */
+.fortune-title {
+  font-size: 2em; /* Tamaño de fuente relativo (em) */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Media query para pantallas pequeñas (ej. tablets) */
+@media (max-width: 768px) {
+  /* Ajustar el tamaño de la imagen de la galleta para tablets */
+  .fortune-cookie-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+/* ... (Other styles remain the same) */
+
+/* Botón para nueva fortuna (responsivo) */
+.new-fortune-button {
+  position: absolute; /* Posicionamiento absoluto */
+  bottom: 10%; /* Posición relativa al final de la página (ajustado) */
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Media query para pantallas pequeñas (ej. tablets) */
+@media (max-width: 768px) {
+  /* Ajustar la distancia entre el título y el botón para tablets */
+  .fortune-title {
+    top: -10px;
+  }
+
+  /* Ajustar el tamaño del botón para pantallas más pequeñas */
+  .new-fortune-button {
+    font-size: 0.8em;
+  }
+}
+
+/* Media query para pantallas muy pequeñas (ej. smartphones) */
+@media (max-width: 480px) {
+  /* Ajustar aún más el tamaño del título para pantallas muy pequeñas */
+  .fortune-title {
+    font-size: 1.2em;
+  }
+
+  /* Ajustar la distancia entre el título y el botón para pantallas muy pequeñas */
+  .fortune-title {
+    top: -5px;
+  }
+
+  /* Ajustar aún más el tamaño del botón para pantallas muy pequeñas */
+  .new-fortune-button {
+    font-size: 0.7em;
+  }
+}
