@@ -30,6 +30,8 @@ const images = [
   fondo4
 ]
 
+
+
 const App = () => {
   const [fortune, setFortune] = useState('');
   const [image, setImage] = useState('');
@@ -48,12 +50,18 @@ const App = () => {
     setImage(images[randomImageIndex]);
   };
 
+  const imageStyles = {
+    backgroundImage: `url(${image})`,
+  }
+
   return (
-    <div className="App">
-      <img src={image} alt="Galleta de la fortuna" />
-      <div className="fortune-container">
-        <button onClick={handleNewFortune}>Tu Fortuna en un click</button>
-        <p>{fortune}</p>
+    <div className='App'>
+      <div className='fortune-cookie-image' style={imageStyles}>
+        <h1 className='fortune-title'>Fortuna</h1>
+        <div className='fortune-container' >
+          <button onClick={handleNewFortune}>Tu Fortuna en un click</button>
+          <p>{fortune}</p>
+        </div>
       </div>
     </div>
   );

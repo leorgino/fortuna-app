@@ -16,12 +16,12 @@ body {
 
 /* Imagen de la galleta de la fortuna (responsivo) */
 .fortune-cookie-image {
-  width: 50vw; /* Ancho relativo al viewport */
-  height: 50vw; /* Alto relativo al viewport */
-  max-width: 250px; /* Máximo ancho para pantallas grandes */
-  max-height: 250px; /* Máximo alto para pantallas grandes */
-  border-radius: 50%;
-  margin-bottom: 20px;
+  height: 80vh;
+  width: 85vh;
+  background-image: url("");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* Contenedor de la fortuna (responsivo) */
@@ -51,20 +51,20 @@ body {
 
 /* Título en mayúscula (responsivo) */
 .fortune-title {
-  font-size: 2em; /* Tamaño de fuente relativo (em) */
-  font-weight: bold;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5f322b;
   text-transform: uppercase;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 /* Media query para pantallas pequeñas (ej. tablets) */
 @media (max-width: 768px) {
   /* Ajustar el tamaño de la imagen de la galleta para tablets */
   .fortune-cookie-image {
-    max-width: 200px;
-    max-height: 200px;
+    /*max-width: 200px;
+    max-height: 200px;*/
   }
 }
 /* ... (Other styles remain the same) */
@@ -89,9 +89,6 @@ body {
 /* Media query para pantallas pequeñas (ej. tablets) */
 @media (max-width: 768px) {
   /* Ajustar la distancia entre el título y el botón para tablets */
-  .fortune-title {
-    top: -10px;
-  }
 
   /* Ajustar el tamaño del botón para pantallas más pequeñas */
   .new-fortune-button {
@@ -105,11 +102,7 @@ body {
   .fortune-title {
     font-size: 1.2em;
   }
-
-  /* Ajustar la distancia entre el título y el botón para pantallas muy pequeñas */
-  .fortune-title {
-    top: -5px;
-  }
+ 
 
   /* Ajustar aún más el tamaño del botón para pantallas muy pequeñas */
   .new-fortune-button {
