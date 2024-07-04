@@ -16,8 +16,8 @@ body {
 
 /* Imagen de la galleta de la fortuna (responsivo) */
 .fortune-cookie-image {
-  height: 80vh;
-  width: 85vh;
+  height: 90vh;
+  width: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -51,7 +51,8 @@ body {
 /* Título en mayúscula (responsivo) */
 .fortune-title {
   position: absolute;
-  top: 35%;
+  max-height: 30px;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #5f322b;
