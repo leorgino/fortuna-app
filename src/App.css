@@ -18,7 +18,6 @@ body {
 .fortune-cookie-image {
   height: 80vh;
   width: 85vh;
-  background-image: url("");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
